@@ -41,7 +41,7 @@ stage('dockerImageTag'){
             sh "docker push \
             $IMAGE_ECR_REPO:latest"
              sh "docker push\
-            $IMAGE_ECR_REPO.$BUILD_NUMBER"
+            $IMAGE_ECR_REPO:$BUILD_NUMBER"
 
         }
     }
